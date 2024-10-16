@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/style3.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="pomodoro">
+                <h1 class="title">Set A Timer</h1>
+                <p class="timer" id="timer">25:00</p>
+                <div class="button-wrapper">
+                    <button id="start">Start</button>
+                    <button id="stop">Stop</button>
+                    <button id="reset">Reset</button>
+                </div>
+            </div>
+            <div class="todo-app">
+                <h1>TO-DO List</h1>
+                <div class="row">
+                    <input type="text" placeholder="Add a Task" id="input-box">
+                    <button onclick="addTask()">Add</button>
+                </div>
+                <ul id="tasks">
+                    <!-- <li class="checked">Task 1</li>
+                    <li>Task 2</li>
+                    <li>Task 3</li> -->
+                </ul>
+            </div>
+            <div class="clock">
+                <div class="clock-circle">
+                    <div class="numbers">
+                        <div class="twelve">12</div>
+                        <div class="three">3</div>
+                        <div class="six">6</div>
+                        <div class="nine">9</div>
+                    </div>
+                    <div class="arrows">
+                        <div class="hour"></div>
+                        <div class="minute"></div>
+                        <div class="second"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../javascript/todoScript.js"></script>
+    </body>
+
+</html>

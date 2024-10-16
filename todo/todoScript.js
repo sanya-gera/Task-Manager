@@ -70,12 +70,12 @@ function startTimer(){
 }
 
 function stopTimer(){
-    // clearInterval(interval);
+    clearInterval(interval);
 }
 function resetTimer(){
-    // clearInterval(interval);
-    // timeLeft=1500;
-    // updateTimer();
+    clearInterval(interval);
+    timeLeft=1500;
+    updateTimer();
 }
 
 startEl.addEventListener("click", startTimer);
